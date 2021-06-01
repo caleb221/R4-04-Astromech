@@ -21,6 +21,7 @@ A small Astromech droid I decided to make
   M3 x 35mm Screws X 4<br>
   M3 X various smaller sizes X 16<br>
   5/16'' Bolt and nut (2.5+inches) X3 <br>
+  Springs that fit over the 5/16'' bolt (these are optional but help)<br>
   Dupont Wires <br>
   Various proto boards cut to size<br>
   some passive components listed in the schematic<br>
