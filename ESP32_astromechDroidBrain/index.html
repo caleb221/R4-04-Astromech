@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+	body{
+		background-image:
+		linear-gradient(to bottom left,greenyellow,black);
+		background-repeat:no-repeat;
+		font-family:monospace;
+		font-size:20px;
+	}
+	img{
+		position:relative;
+		display:block;
+		float:none;
+		margin-left:20%;
+		
+		
+	}
+	button{
+	
+	
+		color:black;
+		background-color:greenyellow;
+		font-size:30px;
+	
+	}
+</style>
+<title>RoboFi</title>
+</head>
+<body>
+	<h1>Hi, beep boop or some robot noises....idk..
+	</h1>
+		
+	<button onclick="openConnection()">Enable Control!</button>
+	<br>
+	<button onclick="sendData('f')"  >Forward</button>
+	<button onclick="sendData('rr')">Reverse</button>
+	<br>
+	<button onclick="sendData('l')">Left</button>
+	<button onclick="sendData('r')">Right</button>
+	<br>
+	<button onclick="sendData('hl')">Head Left</button>
+	<button onclick="sendData('hr')">Head Right</button>
+	<br>
+	<img id = 'camFrame' src='http://192.168.4.1/camStream'></img>
+	<br>
+
+<script>
+
+
+	var openConn = new XMLHttpRequest();
+	//var camConn = new XMLHttpRequest();
+	var websocket;
+	
+
+	openConn.onreadystatechange = function(){
+	alert('connected!');
+	
+	};
+
+
+document.getElementById('camFrame').onload = function() {
+   setTimeout(refreshImg, 200);
+}
+   
+	function refreshImg(){
+	console.log('hi');
+	document.getElementById('camFrame').src='http://192.168.4.1/camStream?d='+new Date().getTime();
+	}
+	
+	
+	function openConnection()
+	{
+		var url = 'http://192.168.4.1/rctrl';//document.location.href +'/rctrl';
+		 openConn.open("GET",url,true);
+		 openConn.send();
+	}
+
+
+
+	function sendData(data){ 
+
+		var url=document.location.href;
+		
+		if(!websocket && !openConn)
+		{
+		alert('connect to the robot!');
+		}
+		else if (!websocket && openConn)
+		{
+		websocket = new WebSocket("ws://192.168.4.1/rctrl");
+		}
+		else
+		{
+		websocket.send(data);
+		}
+		console.log(data);
+	}
+</script>
+<br>
+<br>
+</body>
+</html>
+
