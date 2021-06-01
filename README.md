@@ -54,6 +54,15 @@ Temp: 235<br>
 Slicer: Cura
 --> Slow on the first layer<br>
 --> PLA Should be just fine for the parts as well, i just had PETG because it was cheaper at the time.<br>
+
+# STL / FREECAD FILES
+I designed the droid using FreeCAD, which is free and works on all major OS platforms.<br>
+You are free to edit / change all designs, but please give a reference to the original!<br>
+Printing all parts goes like this:<br>
+1 of each in the UPPER folder (upper head / neck)<br>
+2 legs, 2 Shoulders, 2 droidFourthBody sections, and 1 of each on the rest in the MIDDLE folder. (middle body)<br>
+2 legs, 2 feet, 1 of each 3rd foot component in the LOWER folder. (lower body)<br>
+
 # Wiring / Testing
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/standing1.jpg" alt="the droid" width=200 height=300>
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/processingBoards.jpg" alt="droid brain and heart" width=200 height=200>
