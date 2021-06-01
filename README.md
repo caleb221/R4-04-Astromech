@@ -40,6 +40,9 @@ A small Astromech droid I decided to make
   Files / post processing tools<br>
   Wire cutter<br>
   A ventilated area<br>
+  Socket Wrench / Sockets come in handy <br>
+  Something to spread epoxy with <br>
+  
   
   # Schematic
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/Schematic_R4-04 Astromech_2021-06-02.png" alt="A simple schematic" width=700 height=500>
