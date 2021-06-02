@@ -4,7 +4,7 @@ A small Astromech droid I decided to make
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/standingLookAtMe.jpg" alt="the droid" width=200 height=300>
 
 # IN PROGRESS! CHECK BACK FOR UPDATES!
-   --> finishing up the .ino control code, but hardware is finished!
+   --> finishing up the .ino control code, but hardware and ESP32 code is finished!
    
 # Description  
  <h2>This is R4-04!</h2> <br>Designed with the <a href="https://starwars.fandom.com/wiki/R4_astromech_droid">R4 Astromech droid</a> in mind, but getting lost along the way resulted in R4-04, the droid for a galaxy not so far away.<br>
