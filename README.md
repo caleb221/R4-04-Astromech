@@ -7,7 +7,7 @@ A small Astromech droid I decided to make
    --> finishing up the .ino control code, but hardware is finished!
    
 # Description  
- <h2>This is R4-04!</h2> <br>Designed with the R4 Astromech in mind, but getting lost along the way resulted in R4-04, the droid for a galaxy not so far away.<br>
+ <h2>This is R4-04!</h2> <br>Designed with the <a href="https://starwars.fandom.com/wiki/R4_astromech_droid">R4 Astromech droid</a> in mind, but getting lost along the way resulted in R4-04, the droid for a galaxy not so far away.<br>
  This droid hosts its own WiFi network, and anyone in reach can accesss a web server holding a livestream of the IP camera and controls for the droid.<br>
  The IP of the droid's control server is printed on the bright blue LCD screen.<br>
  The droid is controlled using websocket communication on the ESP32 and relays information from the user to an Arduino Mega  controlling the motors via I2C commands. The Arduino also handles a self balancing routine, adjusting its shoulders with PID so that rougher terrain won't be a problem.<br> 
