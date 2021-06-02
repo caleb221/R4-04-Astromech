@@ -102,6 +102,8 @@ The Front foot uses 4 bearings and an M3 x 8mm nut and screw that fits in the mi
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/frontFootSide.jpg" alt="messy wires"width=200 height=200>
 
 
-
+# Disclaimer:
+ This R4 Unit is a personal voyage in learning freeCAD and helped me form a new curriculum for a Robotics Class.<br>
+ It is not in any way meant to represent work of Disney, Star Wars, or any legal stuff. I don't know how to put this correctly, but its not a 501st worthy model. But still fun to build!
 
 
