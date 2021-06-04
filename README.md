@@ -23,6 +23,31 @@ Upon a new command event on the I2C wires the Arduino will perform the desired m
 
 --> a CSS Transform on the img and possible pretty-ing up of the UI should be done in V2
 
+# Stack
+ESP32 Components:
+
+    ESP-CAM
+    ESP-WiFi
+    SPIFFS
+    freeRTOS
+    I2C Driver
+    HTTP-Server
+ IDF-Version:
+ 
+    ESP-IDF v4.4-dev-744-g1cb31e509
+
+  
+Arduino:
+  
+    Unistep2
+    AdaFruit BME280
+    GY521
+    Wire
+    U8G2Lib
+  
+    
+    
+    
 # Hardware / Materials
   AI-Thinker ESP32-CAM <br>
   Arduino Pro Mega 2650 <br>
