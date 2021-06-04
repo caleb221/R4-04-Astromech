@@ -11,8 +11,18 @@ A small Astromech droid I decided to make
  This droid hosts its own WiFi network, and anyone in reach can accesss a web server holding a livestream of the IP camera and controls for the droid.<br>
  The IP of the droid's control server is printed on the bright blue LCD screen.<br>
  The droid is controlled using websocket communication on the ESP32 and relays information from the user to an Arduino Mega  controlling the motors via I2C commands. The Arduino also handles a self balancing routine, adjusting its shoulders with PID so that rougher terrain won't be a problem.<br> 
-Along with the motor control, R4-04 also shows information concerning its environment on a second screen. The information is obtained via a BME280 Sensor.                                                                                                                                              
- 
+Along with the motor control, R4-04 also shows information concerning its environment on a second screen. The information is obtained via a BME280 Sensor.          
+
+# Web App
+<img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/R4-04WebApp.png " alt="the webApp" width=225 height=300>
+The droid implements a simple web application to control it along with a live video feed.
+The feed is implemented using a timed function to poll the server to update it. It is sent in Jpeg format from the ESP32's onboard  OV2640 camera.<br>
+The control buttons are implemented using websocket communication.<br>
+Each button is given a specific ID command, which is passed through to the ESP32's I2C wires and sent to the arduino.<br>
+Upon a new command event on the I2C wires the Arduino will perform the desired motor operations.
+
+--> a CSS Transform on the img and possible pretty-ing up of the UI should be done in V2
+
 # Hardware / Materials
   AI-Thinker ESP32-CAM <br>
   Arduino Pro Mega 2650 <br>
