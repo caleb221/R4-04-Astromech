@@ -107,24 +107,24 @@ I designed the droid using FreeCAD, which is free and works on all major OS plat
 You are free to edit / change all designs, but please give a reference to the original!<br>
 Printing all parts goes like this:<br>
 
-    1 of each in the UPPER folder (upper head / neck)
-    2 legs, 2 Shoulders, 2 droidFourthBody sections, and 1 of each on the rest in the MIDDLE folder. (middle body)
-    2 legs, 2 feet, 1 of each 3rd foot component in the LOWER folder. (lower body)
+    2 droidSolarPanelHolder1.stl, 1 of all others in the UPPER folder (head / neck)
+    2 legs, 2 Shoulders, 2 FourthLeg_body.stl (Stepper holders), and 1 of each on the rest in the MIDDLE folder. (main body)
+    2 droidFoot1.stl, 1 of each 3rd foot component in the LOWER folder. (lower assembly)
 
 # Wiring / Testing
 
+<img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/standing1.jpg" alt="the droid" width="200" height="300"> 
 
+   <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/processingBoards.jpg" alt="droid brain and heart"  width="200" height="200">
+   
+<img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/screensExample.jpg" alt="Screen Test"  width="200" height="200">
 
-<img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/standing1.jpg" alt="the droid" width=200 height=300>
-<img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/processingBoards.jpg" alt="droid brain and heart"  width=200 height=200>
-
-<img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/screensExample.jpg" alt="Screen Test"  width=200 height=200>
-<img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/powerDistribution.jpg" alt="messy wires" width=200 height=200>
-
+   <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/powerDistribution.jpg" alt="messy wires" width="200" height="200">
+  
 
 # Mechanical Notes
 The TT motor and wheel attatch to the foot using  M3 X 35MM screw and nuts. The leg is attached using 2 bearings and a 5/16'' bolt and nut.
-There is a hole for the wires in the middle of the foot, as well as a space for them to fit on the side of the leg.
+There is a hole for the wires in the middle of the foot, as well as a space for them to fit on the side of the leg.<br>
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/footDetail.jpg" alt="messy wires" width=200 height=200>
 
 <br>
@@ -157,6 +157,7 @@ The Front foot uses 4 bearings and an M3 x 8mm nut and screw that fits in the mi
     More Environmental Sensors
     **POSSIBLY** Replace ESP32 with orange/Raspberry Pi
     Arc Generator (would also require Linear Actuator)
+    Change DuPont wires to something that connects better (MOLEX/JST/something)
     ***Fix up power components** (5V is being fed through the Arduino's Regulator, causing current bottleneck)
     
 Software Upgrades:
