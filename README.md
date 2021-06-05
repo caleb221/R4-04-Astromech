@@ -112,9 +112,13 @@ Printing all parts goes like this:<br>
     2 legs, 2 feet, 1 of each 3rd foot component in the LOWER folder. (lower body)
 
 # Wiring / Testing
+
+
+
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/standing1.jpg" alt="the droid" width=200 height=300>
-<img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/processingBoards.jpg" alt="droid brain and heart" width=200 height=200>
-<img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/screensExample.jpg" alt="Screen Test" width=200 height=200>
+<img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/processingBoards.jpg" alt="droid brain and heart"  width=200 height=200>
+
+<img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/screensExample.jpg" alt="Screen Test"  width=200 height=200>
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/powerDistribution.jpg" alt="messy wires" width=200 height=200>
 
 
