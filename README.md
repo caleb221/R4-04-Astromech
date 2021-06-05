@@ -49,55 +49,56 @@ Arduino:
     
     
 # Hardware / Materials
-  AI-Thinker ESP32-CAM <br>
-  Arduino Pro Mega 2650 <br>
-  I2C 1602 LCD (blue) <br>
-  I2C 1.3'' LCD Screen (white) <br>
-  GYU-521 Accelerometer and Gyroscope <br>
-  BME280 <br>
-  28byj-48 Stepper motor and 2003 ULN Driver (X3)<br>
-  L298N DC Motor Driver <br>
-  DC "TT" Motor and wheel (X2)<br>
-  5V 30mA Mini Solar Panel 50x33mm (x2)<br>
-  4.8V NiMh 2200 mAh Battery (x2)<br>
-  608 Abec 9 Bearings (x8)<br>
-  M4 X 30mm Screw and nuts X 6<br>
-  M3 x 35mm Screws X 4<br>
-  M3 X various smaller sizes X 16<br>
-  5/16'' Bolt and nut (2.5+inches) X3 <br>
-  Springs that fit over the 5/16'' bolt (these are optional but help)<br>
-  Dupont Wires <br>
-  Various proto boards cut to size<br>
-  some passive components listed in the schematic<br>
-  Epoxy glue<br>
-  Hot glue <br>
-  Solder<br>
-  PETG (testing parts took a lot of filament, not sure what the end result requires, also PLA should be fine)<br>
-  <br>
+    AI-Thinker ESP32-CAM 
+    Arduino Pro Mega 2650 
+    I2C 1602 LCD (blue) 
+    I2C 1.3'' LCD Screen (white) 
+    GYU-521 Accelerometer and Gyroscope 
+    BME280 
+    28byj-48 Stepper motor and 2003 ULN Driver (X3)
+    L298N DC Motor Driver 
+    DC "TT" Motor and wheel (X2)
+    5V 30mA Mini Solar Panel 50x33mm (x2)
+    4.8V NiMh 2200 mAh Battery (x2)
+    608 Abec 9 Bearings (x8)<br>
+    M4 X 30mm Screw and nuts X 6
+    M3 x 35mm Screws X 4<br>
+    M3 X various smaller sizes X 16
+    5/16'' Bolt and nut (2.5+inches) X3 
+    Springs that fit over the 5/16'' bolt (these are optional but help)
+    Dupont Wires (Mostly Female to Female, but a Few male to Female)
+    Various proto boards cut to size
+    some passive components listed in the schematic
+    Epoxy glue
+    Hot glue 
+    Solder
+    PETG (testing parts took a lot of filament, not sure what the end result requires, also PLA should be fine)<br>
+  
   
   # Tools
-  3D printer (designed with the ender 3 in mind)<br>
-  Soldering Iron<br>
-  Screwdriver<br>
-  Hot Glue Gun<br>
-  Files / post processing tools<br>
-  Wire cutter<br>
-  A ventilated area<br>
-  Socket Wrench / Sockets come in handy <br>
-  Something to spread epoxy with <br>
-  
+    3D printer (designed with the ender 3 in mind)
+    Soldering Iron
+    Screwdriver
+    Hot Glue Gun
+    Files / post processing tools
+    Wire cutter
+    A ventilated area
+    Socket Wrench / Sockets come in handy 
+    Something to spread epoxy with 
+    Hacksaw
   
   # Schematic
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/Schematic_R4-04 Astromech_2021-06-02.png" alt="A simple schematic" width=700 height=500>
 
 
 # 3D Printer Settings
-Printer: Creality Ender 3 pro V2<br>
-Filament: Duramic PETG<br> 
-Infill: 20% <br>
-Support: 2% everywhere<br>
-Temp: 235<br>
-Slicer: Cura
+
+    Printer: Creality Ender 3 pro V2
+    Filament: Duramic PETG
+    Infill: 20% 
+    Support: 2% everywhere
+    Temp: 235
+    Slicer: Cura
 --> Slow on the first layer<br>
 --> PLA Should be just fine for the parts as well, i just had PETG because it was cheaper at the time.<br>
 
@@ -105,9 +106,10 @@ Slicer: Cura
 I designed the droid using FreeCAD, which is free and works on all major OS platforms.<br>
 You are free to edit / change all designs, but please give a reference to the original!<br>
 Printing all parts goes like this:<br>
-1 of each in the UPPER folder (upper head / neck)<br>
-2 legs, 2 Shoulders, 2 droidFourthBody sections, and 1 of each on the rest in the MIDDLE folder. (middle body)<br>
-2 legs, 2 feet, 1 of each 3rd foot component in the LOWER folder. (lower body)<br>
+
+    1 of each in the UPPER folder (upper head / neck)
+    2 legs, 2 Shoulders, 2 droidFourthBody sections, and 1 of each on the rest in the MIDDLE folder. (middle body)
+    2 legs, 2 feet, 1 of each 3rd foot component in the LOWER folder. (lower body)
 
 # Wiring / Testing
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/standing1.jpg" alt="the droid" width=200 height=300>
@@ -136,6 +138,40 @@ The Front foot uses 4 bearings and an M3 x 8mm nut and screw that fits in the mi
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/frontFootCloseup.jpg" alt="messy wires" width=200 height=200>
 <img src="https://github.com/caleb221/R4-04-Astromech/blob/main/droidImg/frontFootSide.jpg" alt="messy wires"width=200 height=200>
 
+# V2 Notes for the future
+  As with everything, theres always something to upgrade or clean up.<br>
+  Here's a list of things I've thought of to work on if a second version is going to be built. 
+
+
+
+ Hardware upgrades:
+  
+    Voice Recognition Module (elecHouse)
+    Buzzer
+    Stepper motor for 3rd Leg
+    Distance Sensors
+    More Environmental Sensors
+    **POSSIBLY** Replace ESP32 with orange/Raspberry Pi
+    Arc Generator (would also require Linear Actuator)
+    ***Fix up power components** (5V is being fed through the Arduino's Regulator, causing current bottleneck)
+    
+Software Upgrades:
+
+    Web app CSS needs to transform the Image vertically and make things prettier
+    Send Environmental Data to web UI
+    logging??
+    Give additional hardware options on web UI
+    train elecHouse voice module to recognize commands
+    
+    
+ Mechanical Upgrades:
+ 
+    Combine 3/4ths of the body into 1 .stl
+    Body can be taller
+    create spaces in body for hardware components (slots, screw holes, etc.)
+    Figure out a 3Rd leg drive mechanism (leg also needs to fit in the body)
+    change direct stepper connection to shoulders into something better (timing belts??)
+    
 
 # Disclaimer:
  This R4 Unit is a personal voyage in learning freeCAD and helped me form a new curriculum for a Robotics Class.<br>
